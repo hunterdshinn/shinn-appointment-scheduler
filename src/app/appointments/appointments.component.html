@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col">
+      <div class="list-group list-group-horizontal-md">
+        <app-appointment-item
+          *ngFor="let appointment of appointments; let i = index"
+          [appointment]="appointment"
+          [index]="i"
+          class="flex-fill"
+        >
+        </app-appointment-item>
+      </div>
+    </div>
+  </div>
+</div>
